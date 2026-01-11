@@ -1,0 +1,154 @@
+5670.py: note: In function "count":
+5670.py:88:19: error: Incompatible types in assignment (expression has type
+"int | None", variable has type "int")  [assignment]
+            pointer = new_index
+                      ^~~~~~~~~
+5670.py: note: In function "main":
+5670.py:103:16: error: Need type annotation for "trie"  [var-annotated]
+            trie = Trie() 
+                   ^~~~~~
+5670.py:117:42: error: Argument 2 to "count" has incompatible type "list[int]";
+expected "str"  [arg-type]
+                total_strokes += count(trie, word)
+                                             ^~~~
+3080.py: note: In function "main":
+3080.py:79:12: error: Need type annotation for "trie"  [var-annotated]
+        trie = Trie() 
+               ^~~~~~
+3653.py: note: In member "__init__" of class "SegmentTree":
+3653.py:25:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+3653.py:27:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+3653.py:28:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+3653.py: note: In member "_build_recursive" of class "SegmentTree":
+3653.py:45:31: error: Incompatible types in assignment (expression has type
+"T", target has type "U | None")  [assignment]
+                self.tree[node] = data[start] 
+                                  ^~~~~~~~~~~
+3653.py:52:37: error: Argument 1 has incompatible type "U | None"; expected "U"
+ [arg-type]
+            self.tree[node] = self.func(self.tree[2 * node], self.tree[2 *...
+                                        ^~~~~~~~~~~~~~~~~~~
+3653.py:52:58: error: Argument 2 has incompatible type "U | None"; expected "U"
+ [arg-type]
+    ...self.tree[node] = self.func(self.tree[2 * node], self.tree[2 * node + ...
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~
+3653.py: note: In member "_update_recursive" of class "SegmentTree":
+3653.py:61:37: error: Argument 1 has incompatible type "U | None"; expected "U"
+ [arg-type]
+            self.tree[node] = self.func(self.tree[node], diff)
+                                        ^~~~~~~~~~~~~~~
+3653.py: note: In member "_query_kth_recursive" of class "SegmentTree":
+3653.py:78:12: error: Unsupported operand types for <= ("int" and "U") 
+[operator]
+            if k <= left_val:
+               ^
+3653.py:78:12: error: Unsupported operand types for <= ("int" and "None") 
+[operator]
+            if k <= left_val:
+               ^
+3653.py:78:12: note: Right operand is of type "U | None"
+3653.py:81:74: error: Unsupported operand types for - ("int" and "U") 
+[operator]
+    ...rn self._query_kth_recursive(2 * node + 1, mid + 1, end, k - left_val)
+                                                                ^
+3653.py:81:74: error: Unsupported operand types for - ("int" and "None") 
+[operator]
+    ...rn self._query_kth_recursive(2 * node + 1, mid + 1, end, k - left_val)
+                                                                ^
+3653.py:81:74: note: Right operand is of type "U | None"
+3653.py: note: In function "main":
+3653.py:104:20: error: Incompatible types in assignment (expression has type
+"list[str]", variable has type "str")  [assignment]
+                line = input().split()
+                       ^~~~~~~~~~~~~~~
+3653.py:129:19: error: "SegmentTree[int, int]" has no attribute "query_sum" 
+[attr-defined]
+                ans = st.query_sum(1, curr_idx - 1)
+                      ^~~~~~~~~~~~
+2243.py: note: In member "__init__" of class "SegmentTree":
+2243.py:25:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+2243.py:27:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+2243.py:28:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+2243.py: note: In member "_build_recursive" of class "SegmentTree":
+2243.py:45:31: error: Incompatible types in assignment (expression has type
+"T", target has type "U | None")  [assignment]
+                self.tree[node] = data[start] 
+                                  ^~~~~~~~~~~
+2243.py:52:37: error: Argument 1 has incompatible type "U | None"; expected "U"
+ [arg-type]
+            self.tree[node] = self.func(self.tree[2 * node], self.tree[2 *...
+                                        ^~~~~~~~~~~~~~~~~~~
+2243.py:52:58: error: Argument 2 has incompatible type "U | None"; expected "U"
+ [arg-type]
+    ...self.tree[node] = self.func(self.tree[2 * node], self.tree[2 * node + ...
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~
+2243.py: note: In member "_update_recursive" of class "SegmentTree":
+2243.py:61:37: error: Argument 1 has incompatible type "U | None"; expected "U"
+ [arg-type]
+            self.tree[node] = self.func(self.tree[node], diff)
+                                        ^~~~~~~~~~~~~~~
+2243.py: note: In member "_query_kth_recursive" of class "SegmentTree":
+2243.py:78:12: error: Unsupported operand types for <= ("int" and "U") 
+[operator]
+            if k <= left_val:
+               ^
+2243.py:78:12: error: Unsupported operand types for <= ("int" and "None") 
+[operator]
+            if k <= left_val:
+               ^
+2243.py:78:12: note: Right operand is of type "U | None"
+2243.py:81:74: error: Unsupported operand types for - ("int" and "U") 
+[operator]
+    ...rn self._query_kth_recursive(2 * node + 1, mid + 1, end, k - left_val)
+                                                                ^
+2243.py:81:74: error: Unsupported operand types for - ("int" and "None") 
+[operator]
+    ...rn self._query_kth_recursive(2 * node + 1, mid + 1, end, k - left_val)
+                                                                ^
+2243.py:81:74: note: Right operand is of type "U | None"
+17408.py: note: In member "__init__" of class "SegmentTree":
+17408.py:25:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+17408.py:27:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+17408.py:28:9: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+17408.py: note: In member "_build_recursive" of class "SegmentTree":
+17408.py:45:31: error: Incompatible types in assignment (expression has type
+"T", target has type "U | None")  [assignment]
+                self.tree[node] = data[start] 
+                                  ^~~~~~~~~~~
+17408.py:52:37: error: Argument 1 has incompatible type "U | None"; expected
+"U"  [arg-type]
+            self.tree[node] = self.func(self.tree[2 * node], self.tree[2 *...
+                                        ^~~~~~~~~~~~~~~~~~~
+17408.py:52:58: error: Argument 2 has incompatible type "U | None"; expected
+"U"  [arg-type]
+    ...self.tree[node] = self.func(self.tree[2 * node], self.tree[2 * node + ...
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~
+17408.py: note: In member "_update_recursive" of class "SegmentTree":
+17408.py:61:37: error: Argument 1 has incompatible type "U | None"; expected
+"U"  [arg-type]
+            self.tree[node] = self.func(self.tree[node], diff)
+                                        ^~~~~~~~~~~~~~~
+17408.py: note: In member "_query_kth_recursive" of class "SegmentTree":
+17408.py:78:12: error: Unsupported operand types for <= ("int" and "U") 
+[operator]
+            if k <= left_val:
+               ^
+17408.py:78:12: error: Unsupported operand types for <= ("int" and "None") 
+[operator]
+            if k <= left_val:
+               ^
+17408.py:78:12: note: Right operand is of type "U | None"
+17408.py:81:74: error: Unsupported operand types for - ("int" and "U") 
+[operator]
+    ...rn self._query_kth_recursive(2 * node + 1, mid + 1, end, k - left_val)
+                                                                ^
+17408.py:81:74: error: Unsupported operand types for - ("int" and "None") 
+[operator]
+    ...rn self._query_kth_recursive(2 * node + 1, mid + 1, end, k - left_val)
+                                                                ^
+17408.py:81:74: note: Right operand is of type "U | None"
+17408.py: note: In function "main":
+17408.py:147:10: error: Type application has too few types (2 expected)  [misc]
+        st = SegmentTree[Pair]()
+             ^
+Found 31 errors in 5 files (checked 10 source files)
