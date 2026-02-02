@@ -11,7 +11,6 @@
 | **My Prompting** | **88.00%** | **78.00%** | **84.00%** |
 
 *참고: My Prompting 기법은 전반적으로 가장 높은 성능을 보였으며, 특히 0-shot 상황에서 88%의 높은 정답률을 기록하였습니다.*
-![Performance Comparison](output.png)
 
 
 ## 2. CoT Prompting의 우수성 분석
